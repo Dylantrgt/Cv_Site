@@ -1,6 +1,6 @@
 "use client";
 
-import { Gamepad2, Dumbbell, BellElectric, Music, BookOpen, Plane } from "lucide-react";
+import { Gamepad2, Dumbbell, BellElectric, Music} from "lucide-react";
 import Boxing from "./hobbies/Boxing";
 import Gym from "./hobbies/Gym";
 import MusicPlay from "./hobbies/Music";
