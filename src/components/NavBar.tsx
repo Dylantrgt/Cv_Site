@@ -13,10 +13,10 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <nav className='flex flex-col lg:flex-row gap-2 mx-16  z-40 sticky top-0'>
-            <div className="bg-white flex items-center justify-between px-5 rounded-xl z-30 py-2 w-full">
+        <nav className='flex flex-col lg:flex-row gap-2 lg:mx-16  z-40 sticky top-0'>
+            <div className="bg-white flex items-center justify-between px-5 lg:rounded-xl z-30 py-2 w-full">
                 <Link href="/">
-                    <FileUser color='black' size={44} absoluteStrokeWidth={true}/>
+                    <FileUser color='black' size={44} absoluteStrokeWidth={true} />
                     {/* <img src="/logo.webp" alt="logo" className="w-12" /> */}
                 </Link>
                 <ul className="hidden lg:flex gap-6 ">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </ul>
 
                 {/* Bouton burger pour les petits écrans */}
-                <button onClick={toggleMenu} className="lg:hidden text-black">
+                <button onClick={toggleMenu} className="lg:hidden text-black ">
                     {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                 </button>
             </div>

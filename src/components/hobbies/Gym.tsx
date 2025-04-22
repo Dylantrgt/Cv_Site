@@ -11,7 +11,7 @@ const Gym = () => {
     };
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center p-2">
             <div className="w-[350px] h-[350px] flex justify-center items-center">
                 <img
                     src={lifting ? "/muscu2.png" : "/muscu1.png"}

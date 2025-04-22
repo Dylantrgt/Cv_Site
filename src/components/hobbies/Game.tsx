@@ -92,12 +92,10 @@ const Snake = () => {
     };
 
     return (
-        <div className="flex flex-col items-center gap-4">
-            {/* <h3 className="text-xl font-bold">Jeu Snake 🎮</h3> */}
-            {/* {gameOver && <p className="text-red-500 font-semibold">Game Over 😵</p>} */}
+        <div className="lg:flex lg:flex-col lg:items-center relative  h-[100%] w-[100%] lg:h-[100%] lg:w-[100%]">
             <div
                 ref={gameRef}
-                className="relative border-4 border-gray-800 bg-gray-900"
+                className="relative  bg-gray-900 "
                 style={{
                     width: GRID_SIZE * CELL_SIZE,
                     height: GRID_SIZE * CELL_SIZE,
@@ -160,7 +158,7 @@ const Snake = () => {
 
                 {/* Affichage du "Game Over" et du bouton "Rejouer" au centre */}
                 {gameOver && (
-                    <div className="w-[105%] h-[105%] absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 ">
+                    <div className="lg:w-[105%] lg:h-[105%] w-[105%] h-[95%] absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-70 text-white p-4 ">
                         <p className="text-2xl font-bold mb-4 text-red-600">Game Over</p>
                         <button
                             onClick={resetGame}
