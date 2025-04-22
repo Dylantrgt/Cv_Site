@@ -1,4 +1,3 @@
-import { Image } from 'lucide-react'
 import React from 'react'
 
 function Hero() {
@@ -8,7 +7,7 @@ function Hero() {
                 <div className="profile-picture">
                     <img src="/perceval.webp" alt="Ma photo" />
                 </div>
-                <h1 className='text-2xl lg:text-3xl font-bold'>Bonjour, je m'appelle Dylan Martin</h1>
+                <h1 className='text-2xl lg:text-3xl font-bold'>Bonjour, je m&rsquo;appelle Dylan Martin</h1>
                 <p className="text-white mb-4">je suis depuis quelques mois diplômé en tant que Développeur Web et Web mobile.</p>
             </div>
         </section>

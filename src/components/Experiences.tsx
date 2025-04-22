@@ -18,8 +18,8 @@ function Experiences() {
                     </div>
                     <p>Stage développeur web / web mobile.</p>
                     <p>RUN&SMILE , ALES.</p>
-                    <p>Création d’une application mobile, d’un panel admin, d’un Backend
-                        API et d’une refonte du site web. Language et outils utilisé : NodeJs,
+                    <p>Création d&rsquo;une application mobile, d&rsquo;un panel admin, d&rsquo;un Backend
+                        API et d&rsquo;une refonte du site web. Langage et outils utilisés : NodeJs,
                         Express, NextJs, React, React Native, Expo, Tailwind CSS, Figma,
                         GitHub, Supabase, PostgreSQL</p>
                 </div>
@@ -29,7 +29,7 @@ function Experiences() {
                         <img src="/kayak.png" alt="image experiences" className='w-[32px] h-[32px]' />
                     </div>
                     <p>Employé polyvalent.</p>
-                    <p>AIGUE VIVE ARDECHE CANOES, VALLON PONT D'ARC.</p>
+                    <p>AIGUE VIVE ARDECHE CANOES, VALLON PONT D&rsquo;ARC.</p>
                 </div>
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row gap-4' >
@@ -38,12 +38,12 @@ function Experiences() {
                     </div>
                     <p>Employé.</p>
                     <p>EARL CHATEAU DE LA SELVE.</p>
-                    <p>Entretien régulier des vignes, y compris la taille, l'ébourgeonnage et
+                    <p>Entretien régulier des vignes, y compris la taille, l&rsquo;ébourgeonnage et
                         le palissage
                         Travaux de cave : participation à la mise en bouteille des vins,
-                        réalisation de l'étiquetage,
+                        réalisation de l&rsquo;étiquetage,
                         Participation à la vendange manuelle et mécanique
-                        Chef d'équipe des saisonniers</p>
+                        Chef d&rsquo;équipe des saisonniers</p>
                 </div>
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row gap-4' >
@@ -52,7 +52,7 @@ function Experiences() {
                     </div>
                     <p>Agent de sécurité.</p>
                     <p>SUD ARDECHE SECURITE, AUBENAS.</p>
-                    <p>Surveillance de l'entrée de l'établissement, contrôle visuel du contenu
+                    <p>Surveillance de l&rsquo;entrée de l&rsquo;établissement, contrôle visuel du contenu
                         des sacs
                         Réalisation de rondes régulières pour détecter et prévenir toute
                         activité suspecte
