@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
+
 
 const GRID_SIZE = 20; // Taille de la grille
 const CELL_SIZE = 20; // Taille d'une cellule
@@ -92,10 +94,10 @@ const Snake = () => {
     };
 
     return (
-        <div className="lg:flex lg:flex-col lg:items-center relative  h-[100%] w-[100%] lg:h-[100%] lg:w-[100%]">
+        <div className="lg:flex lg:flex-col lg:items-center relative h-[100%] w-[100%] lg:h-[100%] lg:w-[100%]">
             <div
                 ref={gameRef}
-                className="relative  bg-gray-900 "
+                className="relative bg-gray-900"
                 style={{
                     width: GRID_SIZE * CELL_SIZE,
                     height: GRID_SIZE * CELL_SIZE,
@@ -104,24 +106,26 @@ const Snake = () => {
                 {/* Dessiner le serpent */}
                 {snake.map((segment, index) => (
                     index === 0 ? (
-                        <img
+                        <Image
                             key={index}
-                            src="/snake.png" // Mets ton image ici
+                            src="/snake.png"
                             alt="Tête du serpent"
+                            width={CELL_SIZE}
+                            height={CELL_SIZE}
                             className="absolute"
                             style={{
                                 left: segment.x * CELL_SIZE,
                                 top: segment.y * CELL_SIZE,
-                                width: CELL_SIZE,
-                                height: CELL_SIZE,
                             }}
                         />
                     ) : (
-                        <img
+                        <Image
                             key={index}
-                            src="/body_snake.png" // Mets ton image ici
+                            src="/body_snake.png"
                             alt="Corps du serpent"
-                            className="absolute bg-green-500 rounded-xl"
+                            width={CELL_SIZE}
+                            height={CELL_SIZE}
+                            className="absolute rounded-xl"
                             style={{
                                 left: segment.x * CELL_SIZE,
                                 top: segment.y * CELL_SIZE,
@@ -129,32 +133,23 @@ const Snake = () => {
                                 height: CELL_SIZE,
                             }}
                         />
+
                     )
                 ))}
 
-
                 {/* Dessiner la pomme */}
-                <img
-                    src="/apple.png" // Mets le chemin de ton image ici
+                <Image
+                    src="/apple.png"
                     alt="Pomme"
+                    width={CELL_SIZE}
+                    height={CELL_SIZE}
                     className="absolute"
                     style={{
                         left: food.x * CELL_SIZE,
                         top: food.y * CELL_SIZE,
-                        width: CELL_SIZE,
-                        height: CELL_SIZE,
                     }}
                 />
 
-                {/* <div
-                    className="absolute bg-red-500"
-                    style={{
-                        left: food.x * CELL_SIZE,
-                        top: food.y * CELL_SIZE,
-                        width: CELL_SIZE,
-                        height: CELL_SIZE,
-                    }}
-                />*/}
 
                 {/* Affichage du "Game Over" et du bouton "Rejouer" au centre */}
                 {gameOver && (
@@ -165,7 +160,7 @@ const Snake = () => {
                             className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
                         >
                             Rejouer
-                        </button> 
+                        </button>
                     </div>
                 )}
             </div>

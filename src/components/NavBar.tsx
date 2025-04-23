@@ -13,7 +13,7 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
     return (
-        <nav className='flex flex-col lg:flex-row gap-2 lg:mx-16  z-40 sticky top-0'>
+        <nav className='flex flex-col lg:flex-row gap-2 lg:mx-16  z-40 sticky top-2'>
             <div className="bg-white flex items-center justify-between px-5 lg:rounded-xl z-30 py-2 w-full">
                 <Link href="/">
                     <FileUser color='black' size={44} absoluteStrokeWidth={true} />

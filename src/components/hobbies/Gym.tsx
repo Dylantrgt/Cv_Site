@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import  Image  from "next/image";
 
 const Gym = () => {
     const [lifting, setLifting] = useState(false);
@@ -14,15 +14,17 @@ const Gym = () => {
     return (
         <div className="flex flex-col items-center p-2">
             <div className="w-[350px] h-[350px] flex justify-center items-center">
-                {/* <Image src={lifting ? "/muscu2.png" : "/muscu1.png"}
+                <Image src={lifting ? "/muscu2.png" : "/muscu1.png"}
                     alt="Musculation"
+                    width={350}
+                    height={350}
                     className="w-full h-full object-contain"
-                /> */}
-                <img
+                />
+                {/* <img
                     src={lifting ? "/muscu2.png" : "/muscu1.png"}
                     alt="Musculation"
                     className="w-full h-full object-contain"
-                />
+                /> */}
             </div>
             <button
                 onClick={handleLift}
