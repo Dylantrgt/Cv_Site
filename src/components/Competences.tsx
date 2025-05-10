@@ -1,35 +1,67 @@
 
+
+import Image from 'next/image';
 import React from 'react';
 
-const skills = [
-    { name: 'React', level: '50%' },
-    { name: 'Next.js', level: '65%' },
-    { name: 'JavaScript', level: '40%' },
-    { name: 'Tailwind CSS', level: '65%' },
-    { name: 'Node.js', level: '30%' },
-];
+
 
 export default function Competences() {
     return (
-        <section id='competences' className="py-5 lg:py-16 lg:px-12 px-2  bg-gray-500 ">
-            <div className="grid place-items-center mb-6">
-                <div className="grid grid-cols-[auto_auto] items-center gap-4">
-                    <img src="/competences.png" alt="image compétences" className="w-[42px] h-[42px]" />
-                    <h2 className="text-3xl font-bold">Compétences</h2>
-                </div>
+
+        <section id="skills" className="bg-[#2A2530] text-[#F0EAD6] py-12 px-6 lg:px-12">
+            <div className="flex flex-row text-center gap-4 justify-center mb-8">
+                <Image
+                    src="/competences.png"
+                    className="w-[42px] h-[42px]"
+                    width={50}
+                    height={50}
+                    alt="image compétences"
+                  />
+                <h2 className="text-3xl font-bold text-[#C6B36B]">Compétences</h2>
             </div>
-            <div className="lg:max-w-xl mx-auto space-y-4 w-[75%] h-[100%]">
-                {skills.map((skill, index) => (
-                    <div key={index} className="w-full bg-gray-200 rounded-full h-6 overflow-hidden">
-                        <div
-                            className="bg-blue-500 text-white text-[12px] lg:text-sm font-bold flex items-center justify-center h-full transition-all duration-500 ease-in-out"
-                            style={{ width: skill.level }}
-                        >
-                            {skill.name} ({skill.level})
-                        </div>
-                    </div>
-                ))}
+            
+            <div className="grid lg:grid-cols-2 gap-8 text-left">
+
+                <div>
+                    <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">Développement Frontend</h3>
+                    <ul className="list-disc ml-6 space-y-1">
+                        <li>HTML5, CSS3, Tailwind CSS</li>
+                        <li>JavaScript (ES6+), React.js, Next.js</li>
+                        <li>Création de sites responsives et SPA</li>
+                        <li>Utilisation de composants UI et animations</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">Backend & Base de données</h3>
+                    <ul className="list-disc ml-6 space-y-1">
+                        <li>Supabase pour la gestion des données</li>
+                        <li>SQL (lecture et compréhension de requêtes)</li>
+                        <li>Appels API REST (fetch, intégration)</li>
+                        <li>Notions vues en formation (Node.js, Express...)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">UX/UI & Conception</h3>
+                    <ul className="list-disc ml-6 space-y-1">
+                        <li>Figma pour la création de maquettes</li>
+                        <li>User stories et wireframes</li>
+                        <li>Diagrammes de séquence et de fonctionnement backend</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">Méthodologie & Outils</h3>
+                    <ul className="list-disc ml-6 space-y-1">
+                        <li>Git, GitHub (versioning, collaboration)</li>
+                        <li>Organisation de projet (Trello, Notion)</li>
+                        <li>Responsive design & mobile-first</li>
+                    </ul>
+                </div>
+
             </div>
         </section>
+
     );
 }

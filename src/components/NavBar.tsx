@@ -4,6 +4,7 @@ import { useState } from 'react';
 import React from 'react'
 import { NAV_LINKS } from '@/constants';
 import Link from 'next/link'
+import Image from "next/image";
 import { Menu, X, FileUser } from "lucide-react"; // Ajoutez l'icône X pour fermer le menu
 
 const Navbar = () => {
@@ -15,9 +16,14 @@ const Navbar = () => {
     return (
         <nav className='flex flex-col lg:flex-row gap-2 lg:mx-16  z-40 sticky top-2'>
             <div className="bg-white flex items-center justify-between px-5 lg:rounded-xl z-30 py-2 w-full">
-                <Link href="/">
-                    <FileUser color='black' size={44} absoluteStrokeWidth={true} />
-                    {/* <img src="/logo.webp" alt="logo" className="w-12" /> */}
+                <Link href="/#hero">
+                <Image
+                                    src={"/Logo.png"}
+                                    alt="Boxe"
+                                    width={44}
+                                    height={44}
+                                    className=" w-full h-full object-contain"
+                                />
                 </Link>
                 <ul className="hidden lg:flex gap-6 ">
                     {NAV_LINKS.map((link) => (
