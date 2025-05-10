@@ -5,7 +5,7 @@ import React from 'react'
 import { NAV_LINKS } from '@/constants';
 import Link from 'next/link'
 import Image from "next/image";
-import { Menu, X, FileUser } from "lucide-react"; // Ajoutez l'icône X pour fermer le menu
+import { Menu, X, } from "lucide-react"; // Ajoutez l'icône X pour fermer le menu
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
