@@ -27,7 +27,7 @@ export default function Competences() {
                     <ul className="list-disc ml-6 space-y-1">
                         <li>HTML5, CSS3, Tailwind CSS</li>
                         <li>JavaScript (ES6+), React.js, Next.js</li>
-                        <li>Création de sites responsives et SPA</li>
+                        <li>Création de sites responsives </li>
                         <li>Utilisation de composants UI et animations</li>
                     </ul>
                 </div>
@@ -46,7 +46,7 @@ export default function Competences() {
                     <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">UX/UI & Conception</h3>
                     <ul className="list-disc ml-6 space-y-1">
                         <li>Figma pour la création de maquettes</li>
-                        <li>User stories et wireframes</li>
+                        <li>User stories </li>
                         <li>Diagrammes de séquence et de fonctionnement backend</li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@ export default function Competences() {
                     <h3 className="text-xl font-semibold mb-2 text-[#F0EAD6]">Méthodologie & Outils</h3>
                     <ul className="list-disc ml-6 space-y-1">
                         <li>Git, GitHub (versioning, collaboration)</li>
-                        <li>Organisation de projet (Trello, Notion)</li>
+                        <li>Organisation de projet (Notion)</li>
                         <li>Responsive design & mobile-first</li>
                     </ul>
                 </div>
