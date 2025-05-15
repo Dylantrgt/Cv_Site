@@ -8,7 +8,7 @@ import React from 'react';
 export default function Competences() {
     return (
 
-        <section id="competences" className="bg-[#2A2530] text-[#F5F5F5] py-12 px-6 lg:px-12">
+        <section id="competences" className="bg-[#2A2530] text-[#F5F5F5] py-12 px-2 lg:px-12">
             <div className="flex flex-row text-center gap-4 justify-center mb-8">
                 <Image
                     src="/competences.png"
@@ -20,7 +20,7 @@ export default function Competences() {
                 <h2 className="text-3xl font-bold text-[#C6B36B]">Compétences</h2>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-8 text-left ml-2">
+            <div className="grid lg:grid-cols-2 gap-8 text-left lg:ml-2 ">
 
                 <div>
                     <h3 className="text-xl font-semibold mb-2 text-[#C6B36B]">Développement Frontend</h3>

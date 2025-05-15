@@ -30,7 +30,7 @@ const Navbar = () => {
                         <Link
                             href={`#${link.href}`}
                             key={link.key}
-                            className="text-black cursor-pointer transition-all hover:font-bold hover:text-blue-500"
+                            className="text-black cursor-pointer transition-all hover:font-bold hover:text-[#C6B36B]"
                         >
                             {link.label}
                         </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <Link
                             href={`#${link.href}`}
                             key={link.key}
-                            className="text-black cursor-pointer transition-all hover:font-bold hover:text-orange-500 py-2"
+                            className="text-black cursor-pointer transition-all hover:font-bold hover:text-[#C6B36B] py-2"
                             onClick={toggleMenu} // Fermer le menu lors du clic sur un lien
                         >
                             {link.label}
