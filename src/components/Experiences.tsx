@@ -21,7 +21,13 @@ function Experiences() {
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row lg:gap-4 ' >
                         <p className='font-bold text-[#C0A96A]'>06/2024 - 07/2024</p>
-                        <img src="/dev.png" alt="image experiences" className='w-[32px] h-[32px]' />
+                        <Image
+                                    src="/dev.png"
+                                    className="w-[32px] h-[32px]"
+                                    width={250}
+                                    height={250}
+                                    alt="image experiences"
+                                  />
                     </div>
                     <p className=' text-[#F5F5F5] '>Stage développeur web / web mobile.</p>
                     <p  className=' text-[#C0A96A] '>RUN&SMILE , ALES.</p>
@@ -33,7 +39,14 @@ function Experiences() {
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row gap-4' >
                         <p className='font-bold text-[#C0A96A]'>07/2023 - 08/2023</p>
-                        <img src="/kayak.png" alt="image experiences" className='w-[32px] h-[32px]' />
+                         <Image
+                                    src="/kayak.png"
+                                    className="w-[32px] h-[32px]"
+                                    width={250}
+                                    height={250}
+                                    alt="image experiences"
+                                  />
+          
                     </div>
                     <p className=' text-[#F5F5F5] '>Employé polyvalent.</p>
                     <p className=' text-[#C0A96A] '>AIGUE VIVE ARDECHE CANOES, VALLON PONT D&rsquo;ARC.</p>
@@ -41,7 +54,14 @@ function Experiences() {
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row gap-4' >
                         <p className='font-bold text-[#C0A96A]'>05/2018 - 07/2022</p>
-                        <img src="/vignes.png" alt="image experiences" className='w-[32px] h-[32px]' />
+                        <Image
+                                    src="/vignes.png"
+                                    className="w-[32px] h-[32px]"
+                                    width={250}
+                                    height={250}
+                                    alt="image experiences"
+                                  />
+        
                     </div>
                     <p className=' text-[#F5F5F5] '>Employé.</p>
                     <p className=' text-[#C0A96A] '>EARL CHATEAU DE LA SELVE.</p>
@@ -55,7 +75,14 @@ function Experiences() {
                 <div className='flex flex-col lg:gap-2'>
                     <div className='flex flex-row gap-4' >
                         <p className='font-bold text-[#C0A96A]'>05/2016 - 08/2016</p>
-                        <img src="/securite.png" alt="image experiences" className='w-[32px] h-[32px]' />
+                        <Image
+                                    src="/securite.png"
+                                    className="w-[32px] h-[32px]"
+                                    width={250}
+                                    height={250}
+                                    alt="image experiences"
+                                  />
+                    
                     </div>
                     <p className=' text-[#F5F5F5] '>Agent de sécurité.</p>
                     <p className=' text-[#C0A96A] '>SUD ARDECHE SECURITE, AUBENAS.</p>
