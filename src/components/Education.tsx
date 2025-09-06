@@ -15,7 +15,7 @@ export default function Education() {
                     <h2 className="text-3xl font-bold text-[#C0A96A] ">Études</h2>
                 </div>
             </div>
-            <ul className="lg:text-center flex flex-col gap-4">
+            <ul className="lg:text-center  flex flex-col gap-4">
                 <li className=" text-[#F5F5F5] " >2024 - Diplôme Développeur Web & Mobile</li>
                 <li className=" text-[#F5F5F5] " >2019 - Bac Professionnel Sécurité et Prévention</li>
             </ul>
