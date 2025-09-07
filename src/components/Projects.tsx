@@ -25,7 +25,7 @@ export default function Projects() {
                     <h3 className="text-xl font-semibold mb-2 text-[#C6B36B]">Projets réalise sous NextJS</h3>
                     <div className="flex flex-col mt-4">
                         <Link href={"https://site-lavage.vercel.app/"} target="_blank" className='text-[#3154c9] hover:text-white w-54'>{"Site de lavage ( Non finalisé )"}</Link>
-                        <Link href={"https://sport-contact.vercel.app/"} target="_blank" className='text-[#3154c9] hover:text-white w-100'>{"Site d'annuaire pour des sports de combat ( En cours.. )"}</Link>
+                        <Link href={"https://sport-contact-v2.vercel.app/"} target="_blank" className='text-[#3154c9] hover:text-white w-100'>{"Site d'annuaire pour des sports de combat ( En cours.. )"}</Link>
                     </div>
                 </div>
         </section>
